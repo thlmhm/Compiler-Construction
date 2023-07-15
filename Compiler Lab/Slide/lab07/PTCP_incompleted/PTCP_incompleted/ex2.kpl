@@ -1,0 +1,15 @@
+program example2;
+var a : array (.3.) of integer; 
+    n : integer;
+    count : integer;
+
+BEGIN
+    count := 0;
+    for n = 0 to 2 do
+            a(.n.) := readi;      
+    for n = 0 to 2 do 
+        if a(.n.) > 20 then
+            if a(.n.) < 100 then 
+                count := count + 1;
+    Call WriteI(count);
+END.

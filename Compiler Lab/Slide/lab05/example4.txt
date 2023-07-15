@@ -1,0 +1,24 @@
+program example4;
+var A : array (.10.) of integer; 
+    n : integer;
+    sum : integer;
+    num : integer;
+BEGIN
+    num := 100;
+    while num > 9
+    do  
+        begin
+            num := readi;
+            if num <= 0 then num := 100; 
+        end;
+        
+    sum := 0;
+    for n = 0 to num - 1 do
+            a(.n.) := readi;
+    for n = 0 to num - 1 do
+        begin
+        Call WriteI( a(.num - 1 - n.));
+        sum := sum + a(.n.);
+        end;     
+    Call WriteI(sum);
+END.

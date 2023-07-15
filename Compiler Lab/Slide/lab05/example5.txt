@@ -1,0 +1,29 @@
+program example4;
+var A : array(.10.) of array(.10.) of integer;
+    i, j, num, check : integer; (* num is dimention of matrix
+                                    i is row
+                                    j is column*)
+
+BEGIN
+    num := 100;
+    while num > 10
+    do  
+        begin
+            num := readi;
+            if num <= 1 then num := 100; 
+        end;
+    
+
+    for i := 1 to num Do
+        for j := 1 to num Do
+            arr[i,j] := readI;
+
+    check := 1;
+    for i := 1 to num Do
+        for j := i + 1 to num Do
+            begin
+                if ( A (.i.)(.j.) <> 0 ) then check := 0;
+            end
+    
+    call WriteI(check);
+END
